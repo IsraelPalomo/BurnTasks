@@ -12,6 +12,10 @@ const TaskSchema = new Schema(
       require: true,
       unique: true,
     },
+    date: {
+      type: Date,
+      default: new Date(),
+    },
     done: {
       type: Boolean,
       default: false,
