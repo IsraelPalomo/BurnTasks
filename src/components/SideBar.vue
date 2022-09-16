@@ -1,8 +1,12 @@
 <template>
-  <div class="side-bar"></div>
+  <div class="side-bar">
+    <h1 @click="storeBurnTasks().increment()">{{ storeBurnTasks().count }}</h1>
+  </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { storeBurnTasks } from '../store/index';
+</script>
 
 <style scoped lang="scss">
 @import '../assets/scss/colours';
