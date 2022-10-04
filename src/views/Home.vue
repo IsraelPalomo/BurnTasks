@@ -6,6 +6,9 @@
     <header class="topbar">
       <SearchBar />
     </header>
+    <main class="main">
+      <ControlsView></ControlsView>
+    </main>
   </div>
 </template>
 
@@ -13,11 +16,13 @@
 import { Options, Vue } from 'vue-class-component';
 import SideBar from '@/components/SideBar.vue';
 import SearchBar from '@/components/SearchBar.vue';
+import ControlsView from '@/components/ControlsView.vue';
 
 @Options({
   components: {
     SideBar,
     SearchBar,
+    ControlsView,
   },
 })
 export default class Home extends Vue {}
@@ -31,7 +36,7 @@ export default class Home extends Vue {}
   box-sizing: border-box;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
   grid-template-areas:
     'sidebar topbar topbar topbar topbar'
@@ -53,5 +58,6 @@ export default class Home extends Vue {}
 }
 .main {
   grid-area: main;
+  width: 100%;
 }
 </style>
