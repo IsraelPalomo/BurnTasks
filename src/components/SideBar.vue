@@ -29,9 +29,7 @@ const sidebarItems = [
 @import '../assets/scss/colors';
 .side-bar {
   height: calc(100vh - 2rem);
-  width: 13rem;
   background-color: $card;
-  margin: 0 1rem;
   border-radius: 10px;
   display: grid;
   gap: 1rem;

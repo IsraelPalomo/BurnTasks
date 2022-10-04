@@ -1,10 +1,10 @@
 <template>
   <div class="home">
     <aside class="sidebar">
-      <SideBar></SideBar>
+      <SideBar />
     </aside>
     <header class="topbar">
-      <SearchBar></SearchBar>
+      <SearchBar />
     </header>
   </div>
 </template>
@@ -40,12 +40,16 @@ export default class Home extends Vue {}
     'sidebar main main main main'
     'sidebar main main main main';
   padding: 1rem;
+  justify-items: center;
+  gap: 1rem;
 }
 .sidebar {
   grid-area: sidebar;
+  width: 100%;
 }
 .topbar {
   grid-area: topbar;
+  width: 100%;
 }
 .main {
   grid-area: main;

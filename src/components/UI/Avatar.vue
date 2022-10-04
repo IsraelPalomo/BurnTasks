@@ -21,7 +21,7 @@ const props = defineProps({ text: { type: String } });
   align-items: flex-end;
   .icon-user {
     color: $white;
-    padding: 0.5rem;
+    padding: 0.4rem;
     box-sizing: content-box;
     border-radius: 1000px;
     background-color: $bg;
